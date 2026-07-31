@@ -1,0 +1,8 @@
+# Secrets / credentials
+.env
+credentials.json
+token.json
+
+# Temporary/intermediate files (disposable, regenerated as needed)
+.tmp/*
+!.tmp/.gitkeep
