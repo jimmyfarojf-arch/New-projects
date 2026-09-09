@@ -1,0 +1,32 @@
+{
+  "name": "aperture",
+  "version": "0.1.0",
+  "description": "An orchestrated AI pipeline that researches a topic, drafts content, and scores it for both classic SEO and AI-answer (GEO) visibility.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jimmy Faro",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "cli": "tsx src/cli.ts",
+    "server": "tsx src/server.ts",
+    "dev:server": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "hono": "^4.6.14",
+    "@hono/node-server": "^1.13.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8",
+    "@types/node": "^22.10.2"
+  },
+  "engines": {
+    "node": ">=18.17"
+  }
+}
